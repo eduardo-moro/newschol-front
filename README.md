@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# New School
 
-## Getting Started
+Uma Frontend pensado para dar vida à um projeto que busca implementar alguns conceitos da pedagogia a um projeto de tecnologia.
+Boa parte da inspiração bibliográfica para tal projeto vem de livros como:
+- "O porvir, desafios das linguagens do século XXI", de Pedro Demo, que detém uma lista interminável de títulos neste assunto;
+- "Educação da criança excepcional", de Samuel A. Kirk e James J. Gallagher;
+- "Linguagem, desenvolvimento e aprendizagem", de Lev Vygotsky;
+- "Virtualmente Humanos", de Martine Rothblatt;
+- "Pedagogia do oprimido", de Paulo Freire.
 
-First, run the development server:
+## ✨ Funcionalidades desejadas
 
+- **Gerênciamento e rankeamento de rotas de aprendizado**: CRUD de trilhas de aprendizado e rankeamento de trilhas por popularidade, avaliação, nivel do conteúdo;
+- **Criação de conteúdo independente**: Permitir que usuários criem conteúdo para a plataforma, que poderão ser acessados em forma de trilhas ou conteúdo avulso;
+- **Billing e controle de acesso à conteúdos**: Permitir que criadores de conteúdo precifiquem o acesso, a idéia é permitir que apenas parte do conteúdo seja privado de forma paga, para permitir maior distribuição dos conteúdos que se utilizem dos métodos de ensino da plataforma;
+- **Leitura acelerada**: Permitir ao usuário que utilize de novos métodos de leitura, pensados para roubar e manter sua atenção no texto;
+- **Simulação de provas**: À partir de provas reais ou provas geradas por IA baseadas em certo conteúdo, criar simulações de provas;
+- **Provas interativas**: Inspirado em outros modelos de ensino como do duolingo, entregar a "gamificação" de processos de ensino para os usuários;
+- **Gerênciamento de anotações**: O projeto não se propõe à ser completo como notion, obsidian ou outras ferramentas focadas em anotações, mas busca trazer um ambiente organizado. 
+
+## 🛠 Tecnologias Utilizadas
+
+- **Yarn**
+- **React**
+- **Next.js**
+- **ShadCn** (Biblioteca de componentes atômicos, pensada para a criação de componentes próprios)
+
+## ⚙️ Instalação local
+### Pré-requisitos
+Certifique-se de ter os seguintes itens instalados em sua máquina:
+
+- Yarn (1.22+)
+- npx
+---
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone git@github.com:eduardo-moro/newschol-front.git
+cd newschol-front
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+yarn
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Inicie o servidor local (dev):
+```bash
+yarn run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏛️ Licença
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+    <span property="dct:title">Desenvolvido</span> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/eduardo-moro">Eduardo Henrique de Paula Moro</a>, este projeto está protegido sob a licença  
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0</a>.
+    <br/><span>Portanto, não pode ser comercializado por terceiros.</span>
+</p>
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="right">
+    <span>Feito com ❤️.</span>
+</div>
