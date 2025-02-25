@@ -71,6 +71,7 @@ function OpacityChild({
             textShadow: isCurrent ? "0 0 5px black" : "", 
             color: isCurrent? "white" : ""
         }}
+        className={className}
         onClick={() => onWordClick?.(index)}
         >
       {children}
